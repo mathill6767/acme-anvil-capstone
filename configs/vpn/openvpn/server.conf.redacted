@@ -1,0 +1,4 @@
+# OpenVPN server configuration - REDACTED
+# port 1194
+# proto udp
+# dev tun

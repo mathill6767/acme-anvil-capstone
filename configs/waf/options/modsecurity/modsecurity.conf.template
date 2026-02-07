@@ -1,0 +1,4 @@
+# ModSecurity configuration template
+SecRuleEngine On
+SecRequestBodyAccess On
+SecAuditEngine RelevantOnly

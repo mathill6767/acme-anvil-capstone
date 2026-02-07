@@ -1,0 +1,17 @@
+Site,VLAN_Name,VLAN_ID,Subnet
+Main,Staff,10,172.16.10.0/24
+Main,Students,20,172.16.20.0/24
+Main,Printers,30,172.16.30.0/24
+Main,Servers,60,172.16.40.0/24
+Main,DMZ,50,172.16.50.0/24
+Main,Guest,99,172.16.99.0/24
+RO1,Staff,110,172.20.10.0/24
+RO1,Students,120,172.20.20.0/24
+RO1,Printers,130,172.20.30.0/24
+RO1,Servers,140,172.20.40.0/24
+RO1,Guest,199,172.20.99.0/24
+RO2,Staff,210,172.30.10.0/24
+RO2,Students,220,172.30.20.0/24
+RO2,Printers,230,172.30.30.0/24
+RO2,Servers,240,172.30.40.0/24
+RO2,Guest,299,172.30.99.0/24

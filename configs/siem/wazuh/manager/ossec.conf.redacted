@@ -1,0 +1,4 @@
+<!-- Wazuh manager ossec.conf - REDACTED -->
+<ossec_config>
+  <!-- Replace credentials before use -->
+</ossec_config>

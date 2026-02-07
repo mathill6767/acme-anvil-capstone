@@ -1,0 +1,50 @@
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Keys, certificates, and secrets
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Raw firewall / device exports (use .redacted versions)
+*.xml
+!*.xml.redacted
+*.conf
+*.backup
+*.export
+*.tar
+*.tar.gz
+*.tgz
+!configs/siem/wazuh/manager/local_rules.xml
+
+# Logs
+*.log
+logs/
+
+# IDE and editor folders
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+*.bak
+
+# Claude Code / AI tooling
+.claude/
+
+# Audit tooling artifacts (optional)
+.audit/
+.audit-cache/

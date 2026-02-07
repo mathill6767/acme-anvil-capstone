@@ -1,0 +1,7 @@
+<?php
+// WordPress configuration template
+// Replace DB_NAME, DB_USER, DB_PASSWORD, DB_HOST before use
+define('DB_NAME', 'PLACEHOLDER');
+define('DB_USER', 'PLACEHOLDER');
+define('DB_PASSWORD', 'PLACEHOLDER');
+define('DB_HOST', 'PLACEHOLDER');

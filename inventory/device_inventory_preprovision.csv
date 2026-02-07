@@ -1,0 +1,83 @@
+Asset_ID,Hostname,Site,Role,VLAN,Subnet,IP,OU,Notes
+1001,DC1,MAIN,AD DS / DNS / GPO / LDAP,Server,172.16.40.0/24,172.16.40.10,"OU=Domain Controllers,OU=Servers,DC=acmeanvil,DC=academics",Primary Domain Controller
+1002,FILE01,MAIN,SMB File Server,Server,172.16.40.0/24,172.16.40.11,"OU=File Servers,OU=Servers,DC=acmeanvil,DC=academics",Shares for staff/students as required
+1003,SIEM01,MAIN,Wazuh SIEM (Manager/Indexer/Dashboard),Server,172.16.40.0/24,172.16.40.12,"OU=Servers,DC=acmeanvil,DC=academics",Central logging/alerting
+1004,PRINT01,MAIN,CUPS Print Server,Server,172.16.40.0/24,172.16.40.13,"OU=Servers,DC=acmeanvil,DC=academics",Central print queues; routes to site printer VLANs
+1005,WEB01,MAIN,DMZ Web + Reverse Proxy + Authelia + ModSecurity,DMZ,172.16.50.0/24,172.16.50.10,"OU=Web Servers,OU=Servers,DC=acmeanvil,DC=academics",Public web via NAT 10.0.179.234
+1006,RODC1,RO1,RODC / DNS (optional but documented),Server,172.20.40.0/24,172.20.40.10,"OU=Domain Controllers,OU=Servers,DC=acmeanvil,DC=academics",Remote Site #1
+1007,RODC2,RO2,RODC / DNS (optional but documented),Server,172.30.40.0/24,172.30.40.10,"OU=Domain Controllers,OU=Servers,DC=acmeanvil,DC=academics",Remote Site #2
+1008,PRN-MAIN-01,MAIN,Network Printer,Printer,172.16.30.0/24,172.16.30.20,"OU=Printers,DC=acmeanvil,DC=academics",Static; managed via CUPS/PRINT01
+1009,PRN-MAIN-02,MAIN,Network Printer,Printer,172.16.30.0/24,172.16.30.21,"OU=Printers,DC=acmeanvil,DC=academics",Static; managed via CUPS/PRINT01
+1010,PRN-MAIN-03,MAIN,Network Printer,Printer,172.16.30.0/24,172.16.30.22,"OU=Printers,DC=acmeanvil,DC=academics",Static; managed via CUPS/PRINT01
+1011,PRN-MAIN-04,MAIN,Network Printer,Printer,172.16.30.0/24,172.16.30.23,"OU=Printers,DC=acmeanvil,DC=academics",Static; managed via CUPS/PRINT01
+1012,PRN-MAIN-05,MAIN,Network Printer,Printer,172.16.30.0/24,172.16.30.24,"OU=Printers,DC=acmeanvil,DC=academics",Static; managed via CUPS/PRINT01
+1013,PRN-RO1-01,RO1,Network Printer,Printer,172.20.30.0/24,172.20.30.20,"OU=Printers,DC=acmeanvil,DC=academics",Static; managed via CUPS/PRINT01
+1014,PRN-RO1-02,RO1,Network Printer,Printer,172.20.30.0/24,172.20.30.21,"OU=Printers,DC=acmeanvil,DC=academics",Static; managed via CUPS/PRINT01
+1015,PRN-RO1-03,RO1,Network Printer,Printer,172.20.30.0/24,172.20.30.22,"OU=Printers,DC=acmeanvil,DC=academics",Static; managed via CUPS/PRINT01
+1016,PRN-RO1-04,RO1,Network Printer,Printer,172.20.30.0/24,172.20.30.23,"OU=Printers,DC=acmeanvil,DC=academics",Static; managed via CUPS/PRINT01
+1017,PRN-RO1-05,RO1,Network Printer,Printer,172.20.30.0/24,172.20.30.24,"OU=Printers,DC=acmeanvil,DC=academics",Static; managed via CUPS/PRINT01
+1018,PRN-RO2-01,RO2,Network Printer,Printer,172.30.30.0/24,172.30.30.20,"OU=Printers,DC=acmeanvil,DC=academics",Static; managed via CUPS/PRINT01
+1019,PRN-RO2-02,RO2,Network Printer,Printer,172.30.30.0/24,172.30.30.21,"OU=Printers,DC=acmeanvil,DC=academics",Static; managed via CUPS/PRINT01
+1020,PRN-RO2-03,RO2,Network Printer,Printer,172.30.30.0/24,172.30.30.22,"OU=Printers,DC=acmeanvil,DC=academics",Static; managed via CUPS/PRINT01
+1021,PRN-RO2-04,RO2,Network Printer,Printer,172.30.30.0/24,172.30.30.23,"OU=Printers,DC=acmeanvil,DC=academics",Static; managed via CUPS/PRINT01
+1022,PRN-RO2-05,RO2,Network Printer,Printer,172.30.30.0/24,172.30.30.24,"OU=Printers,DC=acmeanvil,DC=academics",Static; managed via CUPS/PRINT01
+1023,MAIN-STAFF-PC-01,MAIN,Staff Workstation,Staff,172.16.10.0/24,,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",DHCP (optional reservation)
+1024,MAIN-STAFF-PC-02,MAIN,Staff Workstation,Staff,172.16.10.0/24,,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",DHCP (optional reservation)
+1025,MAIN-STAFF-PC-03,MAIN,Staff Workstation,Staff,172.16.10.0/24,,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",DHCP (optional reservation)
+1026,MAIN-STAFF-PC-04,MAIN,Staff Workstation,Staff,172.16.10.0/24,,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",DHCP (optional reservation)
+1027,MAIN-STAFF-PC-05,MAIN,Staff Workstation,Staff,172.16.10.0/24,,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",DHCP (optional reservation)
+1028,MAIN-STU-PC-01,MAIN,Student Workstation,Students,172.16.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1029,MAIN-STU-PC-02,MAIN,Student Workstation,Students,172.16.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1030,MAIN-STU-PC-03,MAIN,Student Workstation,Students,172.16.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1031,MAIN-STU-PC-04,MAIN,Student Workstation,Students,172.16.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1032,MAIN-STU-PC-05,MAIN,Student Workstation,Students,172.16.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1033,MAIN-STU-PC-06,MAIN,Student Workstation,Students,172.16.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1034,MAIN-STU-PC-07,MAIN,Student Workstation,Students,172.16.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1035,MAIN-STU-PC-08,MAIN,Student Workstation,Students,172.16.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1036,MAIN-STU-PC-09,MAIN,Student Workstation,Students,172.16.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1037,MAIN-STU-PC-10,MAIN,Student Workstation,Students,172.16.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1038,MAIN-STU-PC-11,MAIN,Student Workstation,Students,172.16.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1039,MAIN-STU-PC-12,MAIN,Student Workstation,Students,172.16.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1040,MAIN-STU-PC-13,MAIN,Student Workstation,Students,172.16.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1041,MAIN-STU-PC-14,MAIN,Student Workstation,Students,172.16.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1042,MAIN-STU-PC-15,MAIN,Student Workstation,Students,172.16.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1043,RO1-STAFF-PC-01,RO1,Staff Workstation,Staff,172.20.10.0/24,,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",DHCP (optional reservation)
+1044,RO1-STAFF-PC-02,RO1,Staff Workstation,Staff,172.20.10.0/24,,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",DHCP (optional reservation)
+1045,RO1-STAFF-PC-03,RO1,Staff Workstation,Staff,172.20.10.0/24,,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",DHCP (optional reservation)
+1046,RO1-STAFF-PC-04,RO1,Staff Workstation,Staff,172.20.10.0/24,,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",DHCP (optional reservation)
+1047,RO1-STAFF-PC-05,RO1,Staff Workstation,Staff,172.20.10.0/24,,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",DHCP (optional reservation)
+1048,RO1-STU-PC-01,RO1,Student Workstation,Students,172.20.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1049,RO1-STU-PC-02,RO1,Student Workstation,Students,172.20.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1050,RO1-STU-PC-03,RO1,Student Workstation,Students,172.20.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1051,RO1-STU-PC-04,RO1,Student Workstation,Students,172.20.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1052,RO1-STU-PC-05,RO1,Student Workstation,Students,172.20.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1053,RO1-STU-PC-06,RO1,Student Workstation,Students,172.20.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1054,RO1-STU-PC-07,RO1,Student Workstation,Students,172.20.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1055,RO1-STU-PC-08,RO1,Student Workstation,Students,172.20.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1056,RO1-STU-PC-09,RO1,Student Workstation,Students,172.20.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1057,RO1-STU-PC-10,RO1,Student Workstation,Students,172.20.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1058,RO1-STU-PC-11,RO1,Student Workstation,Students,172.20.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1059,RO1-STU-PC-12,RO1,Student Workstation,Students,172.20.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1060,RO1-STU-PC-13,RO1,Student Workstation,Students,172.20.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1061,RO1-STU-PC-14,RO1,Student Workstation,Students,172.20.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1062,RO1-STU-PC-15,RO1,Student Workstation,Students,172.20.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1063,RO2-STAFF-PC-01,RO2,Staff Workstation,Staff,172.30.10.0/24,,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",DHCP (optional reservation)
+1064,RO2-STAFF-PC-02,RO2,Staff Workstation,Staff,172.30.10.0/24,,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",DHCP (optional reservation)
+1065,RO2-STAFF-PC-03,RO2,Staff Workstation,Staff,172.30.10.0/24,,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",DHCP (optional reservation)
+1066,RO2-STAFF-PC-04,RO2,Staff Workstation,Staff,172.30.10.0/24,,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",DHCP (optional reservation)
+1067,RO2-STAFF-PC-05,RO2,Staff Workstation,Staff,172.30.10.0/24,,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",DHCP (optional reservation)
+1068,RO2-STU-PC-01,RO2,Student Workstation,Students,172.30.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1069,RO2-STU-PC-02,RO2,Student Workstation,Students,172.30.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1070,RO2-STU-PC-03,RO2,Student Workstation,Students,172.30.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1071,RO2-STU-PC-04,RO2,Student Workstation,Students,172.30.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1072,RO2-STU-PC-05,RO2,Student Workstation,Students,172.30.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1073,RO2-STU-PC-06,RO2,Student Workstation,Students,172.30.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1074,RO2-STU-PC-07,RO2,Student Workstation,Students,172.30.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1075,RO2-STU-PC-08,RO2,Student Workstation,Students,172.30.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1076,RO2-STU-PC-09,RO2,Student Workstation,Students,172.30.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1077,RO2-STU-PC-10,RO2,Student Workstation,Students,172.30.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1078,RO2-STU-PC-11,RO2,Student Workstation,Students,172.30.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1079,RO2-STU-PC-12,RO2,Student Workstation,Students,172.30.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1080,RO2-STU-PC-13,RO2,Student Workstation,Students,172.30.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1081,RO2-STU-PC-14,RO2,Student Workstation,Students,172.30.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP
+1082,RO2-STU-PC-15,RO2,Student Workstation,Students,172.30.20.0/24,,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",DHCP

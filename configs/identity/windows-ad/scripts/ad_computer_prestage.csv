@@ -1,0 +1,83 @@
+Name,OUPath,Description,Enabled,DNSHostName
+DC1,"OU=Domain Controllers,OU=Servers,DC=acmeanvil,DC=academics",AD DS / DNS / GPO / LDAP | MAIN,TRUE,dc1.acmeanvil.academics
+FILE01,"OU=File Servers,OU=Servers,DC=acmeanvil,DC=academics",SMB File Server | MAIN,TRUE,file01.acmeanvil.academics
+SIEM01,"OU=Servers,DC=acmeanvil,DC=academics",Wazuh SIEM (Manager/Indexer/Dashboard) | MAIN,TRUE,siem01.acmeanvil.academics
+PRINT01,"OU=Servers,DC=acmeanvil,DC=academics",CUPS Print Server | MAIN,TRUE,print01.acmeanvil.academics
+WEB01,"OU=Web Servers,OU=Servers,DC=acmeanvil,DC=academics",DMZ Web + Reverse Proxy + Authelia + ModSecurity | MAIN,TRUE,web01.acmeanvil.academics
+RODC1,"OU=Domain Controllers,OU=Servers,DC=acmeanvil,DC=academics",RODC / DNS (optional but documented) | RO1,TRUE,rodc1.acmeanvil.academics
+RODC2,"OU=Domain Controllers,OU=Servers,DC=acmeanvil,DC=academics",RODC / DNS (optional but documented) | RO2,TRUE,rodc2.acmeanvil.academics
+PRN-MAIN-01,"OU=Printers,DC=acmeanvil,DC=academics",Network Printer | MAIN,TRUE,prn-main-01.acmeanvil.academics
+PRN-MAIN-02,"OU=Printers,DC=acmeanvil,DC=academics",Network Printer | MAIN,TRUE,prn-main-02.acmeanvil.academics
+PRN-MAIN-03,"OU=Printers,DC=acmeanvil,DC=academics",Network Printer | MAIN,TRUE,prn-main-03.acmeanvil.academics
+PRN-MAIN-04,"OU=Printers,DC=acmeanvil,DC=academics",Network Printer | MAIN,TRUE,prn-main-04.acmeanvil.academics
+PRN-MAIN-05,"OU=Printers,DC=acmeanvil,DC=academics",Network Printer | MAIN,TRUE,prn-main-05.acmeanvil.academics
+PRN-RO1-01,"OU=Printers,DC=acmeanvil,DC=academics",Network Printer | RO1,TRUE,prn-ro1-01.acmeanvil.academics
+PRN-RO1-02,"OU=Printers,DC=acmeanvil,DC=academics",Network Printer | RO1,TRUE,prn-ro1-02.acmeanvil.academics
+PRN-RO1-03,"OU=Printers,DC=acmeanvil,DC=academics",Network Printer | RO1,TRUE,prn-ro1-03.acmeanvil.academics
+PRN-RO1-04,"OU=Printers,DC=acmeanvil,DC=academics",Network Printer | RO1,TRUE,prn-ro1-04.acmeanvil.academics
+PRN-RO1-05,"OU=Printers,DC=acmeanvil,DC=academics",Network Printer | RO1,TRUE,prn-ro1-05.acmeanvil.academics
+PRN-RO2-01,"OU=Printers,DC=acmeanvil,DC=academics",Network Printer | RO2,TRUE,prn-ro2-01.acmeanvil.academics
+PRN-RO2-02,"OU=Printers,DC=acmeanvil,DC=academics",Network Printer | RO2,TRUE,prn-ro2-02.acmeanvil.academics
+PRN-RO2-03,"OU=Printers,DC=acmeanvil,DC=academics",Network Printer | RO2,TRUE,prn-ro2-03.acmeanvil.academics
+PRN-RO2-04,"OU=Printers,DC=acmeanvil,DC=academics",Network Printer | RO2,TRUE,prn-ro2-04.acmeanvil.academics
+PRN-RO2-05,"OU=Printers,DC=acmeanvil,DC=academics",Network Printer | RO2,TRUE,prn-ro2-05.acmeanvil.academics
+MAIN-STAFF-PC-01,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",Staff Workstation | MAIN,TRUE,main-staff-pc-01.acmeanvil.academics
+MAIN-STAFF-PC-02,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",Staff Workstation | MAIN,TRUE,main-staff-pc-02.acmeanvil.academics
+MAIN-STAFF-PC-03,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",Staff Workstation | MAIN,TRUE,main-staff-pc-03.acmeanvil.academics
+MAIN-STAFF-PC-04,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",Staff Workstation | MAIN,TRUE,main-staff-pc-04.acmeanvil.academics
+MAIN-STAFF-PC-05,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",Staff Workstation | MAIN,TRUE,main-staff-pc-05.acmeanvil.academics
+MAIN-STU-PC-01,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | MAIN,TRUE,main-stu-pc-01.acmeanvil.academics
+MAIN-STU-PC-02,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | MAIN,TRUE,main-stu-pc-02.acmeanvil.academics
+MAIN-STU-PC-03,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | MAIN,TRUE,main-stu-pc-03.acmeanvil.academics
+MAIN-STU-PC-04,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | MAIN,TRUE,main-stu-pc-04.acmeanvil.academics
+MAIN-STU-PC-05,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | MAIN,TRUE,main-stu-pc-05.acmeanvil.academics
+MAIN-STU-PC-06,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | MAIN,TRUE,main-stu-pc-06.acmeanvil.academics
+MAIN-STU-PC-07,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | MAIN,TRUE,main-stu-pc-07.acmeanvil.academics
+MAIN-STU-PC-08,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | MAIN,TRUE,main-stu-pc-08.acmeanvil.academics
+MAIN-STU-PC-09,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | MAIN,TRUE,main-stu-pc-09.acmeanvil.academics
+MAIN-STU-PC-10,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | MAIN,TRUE,main-stu-pc-10.acmeanvil.academics
+MAIN-STU-PC-11,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | MAIN,TRUE,main-stu-pc-11.acmeanvil.academics
+MAIN-STU-PC-12,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | MAIN,TRUE,main-stu-pc-12.acmeanvil.academics
+MAIN-STU-PC-13,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | MAIN,TRUE,main-stu-pc-13.acmeanvil.academics
+MAIN-STU-PC-14,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | MAIN,TRUE,main-stu-pc-14.acmeanvil.academics
+MAIN-STU-PC-15,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | MAIN,TRUE,main-stu-pc-15.acmeanvil.academics
+RO1-STAFF-PC-01,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",Staff Workstation | RO1,TRUE,ro1-staff-pc-01.acmeanvil.academics
+RO1-STAFF-PC-02,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",Staff Workstation | RO1,TRUE,ro1-staff-pc-02.acmeanvil.academics
+RO1-STAFF-PC-03,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",Staff Workstation | RO1,TRUE,ro1-staff-pc-03.acmeanvil.academics
+RO1-STAFF-PC-04,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",Staff Workstation | RO1,TRUE,ro1-staff-pc-04.acmeanvil.academics
+RO1-STAFF-PC-05,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",Staff Workstation | RO1,TRUE,ro1-staff-pc-05.acmeanvil.academics
+RO1-STU-PC-01,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO1,TRUE,ro1-stu-pc-01.acmeanvil.academics
+RO1-STU-PC-02,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO1,TRUE,ro1-stu-pc-02.acmeanvil.academics
+RO1-STU-PC-03,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO1,TRUE,ro1-stu-pc-03.acmeanvil.academics
+RO1-STU-PC-04,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO1,TRUE,ro1-stu-pc-04.acmeanvil.academics
+RO1-STU-PC-05,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO1,TRUE,ro1-stu-pc-05.acmeanvil.academics
+RO1-STU-PC-06,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO1,TRUE,ro1-stu-pc-06.acmeanvil.academics
+RO1-STU-PC-07,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO1,TRUE,ro1-stu-pc-07.acmeanvil.academics
+RO1-STU-PC-08,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO1,TRUE,ro1-stu-pc-08.acmeanvil.academics
+RO1-STU-PC-09,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO1,TRUE,ro1-stu-pc-09.acmeanvil.academics
+RO1-STU-PC-10,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO1,TRUE,ro1-stu-pc-10.acmeanvil.academics
+RO1-STU-PC-11,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO1,TRUE,ro1-stu-pc-11.acmeanvil.academics
+RO1-STU-PC-12,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO1,TRUE,ro1-stu-pc-12.acmeanvil.academics
+RO1-STU-PC-13,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO1,TRUE,ro1-stu-pc-13.acmeanvil.academics
+RO1-STU-PC-14,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO1,TRUE,ro1-stu-pc-14.acmeanvil.academics
+RO1-STU-PC-15,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO1,TRUE,ro1-stu-pc-15.acmeanvil.academics
+RO2-STAFF-PC-01,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",Staff Workstation | RO2,TRUE,ro2-staff-pc-01.acmeanvil.academics
+RO2-STAFF-PC-02,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",Staff Workstation | RO2,TRUE,ro2-staff-pc-02.acmeanvil.academics
+RO2-STAFF-PC-03,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",Staff Workstation | RO2,TRUE,ro2-staff-pc-03.acmeanvil.academics
+RO2-STAFF-PC-04,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",Staff Workstation | RO2,TRUE,ro2-staff-pc-04.acmeanvil.academics
+RO2-STAFF-PC-05,"OU=Staff,OU=Workstations,DC=acmeanvil,DC=academics",Staff Workstation | RO2,TRUE,ro2-staff-pc-05.acmeanvil.academics
+RO2-STU-PC-01,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO2,TRUE,ro2-stu-pc-01.acmeanvil.academics
+RO2-STU-PC-02,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO2,TRUE,ro2-stu-pc-02.acmeanvil.academics
+RO2-STU-PC-03,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO2,TRUE,ro2-stu-pc-03.acmeanvil.academics
+RO2-STU-PC-04,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO2,TRUE,ro2-stu-pc-04.acmeanvil.academics
+RO2-STU-PC-05,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO2,TRUE,ro2-stu-pc-05.acmeanvil.academics
+RO2-STU-PC-06,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO2,TRUE,ro2-stu-pc-06.acmeanvil.academics
+RO2-STU-PC-07,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO2,TRUE,ro2-stu-pc-07.acmeanvil.academics
+RO2-STU-PC-08,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO2,TRUE,ro2-stu-pc-08.acmeanvil.academics
+RO2-STU-PC-09,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO2,TRUE,ro2-stu-pc-09.acmeanvil.academics
+RO2-STU-PC-10,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO2,TRUE,ro2-stu-pc-10.acmeanvil.academics
+RO2-STU-PC-11,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO2,TRUE,ro2-stu-pc-11.acmeanvil.academics
+RO2-STU-PC-12,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO2,TRUE,ro2-stu-pc-12.acmeanvil.academics
+RO2-STU-PC-13,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO2,TRUE,ro2-stu-pc-13.acmeanvil.academics
+RO2-STU-PC-14,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO2,TRUE,ro2-stu-pc-14.acmeanvil.academics
+RO2-STU-PC-15,"OU=Students,OU=Workstations,DC=acmeanvil,DC=academics",Student Workstation | RO2,TRUE,ro2-stu-pc-15.acmeanvil.academics

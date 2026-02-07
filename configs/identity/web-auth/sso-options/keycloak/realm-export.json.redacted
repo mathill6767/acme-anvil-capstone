@@ -1,0 +1,5 @@
+{
+  "realm": "acme",
+  "enabled": true,
+  "_comment": "REDACTED - replace secrets before use"
+}
