@@ -44,6 +44,7 @@ Thumbs.db
 
 # Claude Code / AI tooling
 .claude/
+CLAUDE.md
 
 # Audit tooling artifacts (optional)
 .audit/
